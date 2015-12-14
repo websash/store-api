@@ -1,0 +1,4 @@
+{
+  "presets": ["node5", "stage-2"],
+  "plugins": []
+}

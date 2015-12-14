@@ -1,0 +1,26 @@
+{
+  "name": "store-api",
+  "version": "0.0.1",
+  "description": "tiny little service for testing",
+  "scripts": {
+  	"clean": "rm -rf build",
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "npm run clean && babel src --out-dir build",
+    "serve": "node build/index.js"
+  },
+  "author": "websash",
+  "license": "MIT",
+  "dependencies": {
+    "co-body": "^4.0.0",
+    "koa": "^2.0.0-alpha.3",
+    "koa-router": "^7.0.0",
+    "mongoose": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-preset-node5": "^10.1.0",
+    "babel-preset-stage-2": "^6.3.13"
+  },
+  "engines": {
+    "node": ">= 5.0.0"
+  }
+}
